@@ -1,6 +1,10 @@
 {
   "author": "Daniel Di Pasquale",
+  "bugs": {
+    "url": "https://github.com/daniel-dipasquale/dd-common-utils/issues"
+  },
   "description": "common utils",
+  "homepage": "https://github.com/daniel-dipasquale/dd-common-utils",
   "keywords": [
     "async",
     "common",
@@ -13,6 +17,10 @@
   "license": "ISC",
   "main": "index.js",
   "name": "dd-common-utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-dipasquale/dd-common-utils"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
