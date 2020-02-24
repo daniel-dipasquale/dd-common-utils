@@ -4,7 +4,30 @@
     "url": "https://github.com/daniel-dipasquale/dd-common-utils/issues"
   },
   "description": "common utils",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "proxyquire": "^2.1.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
   "homepage": "https://github.com/daniel-dipasquale/dd-common-utils",
+  "jshintConfig": {
+    "boss": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "esversion": 9,
+    "expr": true,
+    "laxbreak": true,
+    "mocha": true,
+    "node": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": true
+  },
   "keywords": [
     "async",
     "common",
@@ -22,7 +45,9 @@
     "url": "https://github.com/daniel-dipasquale/dd-common-utils"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'lib/{,!(node_modules)/**}/*-test.js' --recursive && jshint lib",
+    "test-single": "mocha $1",
+    "test-with-coverage": "nyc --reporter=text mocha 'lib/{,!(node_modules)/**}/*-test.js' --recursive && jshint lib"
   },
   "version": "1.0.0"
 }
