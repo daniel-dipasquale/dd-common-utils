@@ -40,7 +40,7 @@
     "utils"
   ],
   "license": "ISC",
-  "main": "lib/index.js",
+  "main": "index.js",
   "name": "@daniel-dipasquale/dd-common-utils",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -54,5 +54,5 @@
     "test-single": "mocha $1",
     "test-with-coverage": "nyc --reporter=text mocha 'lib/{,!(node_modules)/**}/*-test.js' --recursive && jshint lib"
   },
-  "version": "1.0.2"
+  "version": "1.0.4"
 }
