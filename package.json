@@ -17,6 +17,7 @@
     "lib": "lib"
   },
   "files": [
+    "lib",
     "index.js"
   ],
   "homepage": "https://github.com/daniel-dipasquale/dd-common-utils",
@@ -57,5 +58,5 @@
     "test-single": "mocha $1",
     "test-with-coverage": "nyc --reporter=text mocha 'lib/{,!(node_modules)/**}/*-test.js' --recursive && jshint lib"
   },
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
