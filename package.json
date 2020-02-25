@@ -41,7 +41,7 @@
   ],
   "license": "ISC",
   "main": "lib/index.js",
-  "name": "dd-common-utils",
+  "name": "@daniel-dipasquale/dd-common-utils",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
