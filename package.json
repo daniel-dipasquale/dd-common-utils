@@ -58,5 +58,5 @@
     "test-single": "mocha $1",
     "test-with-coverage": "nyc --reporter=text mocha 'lib/{,!(node_modules)/**}/*-test.js' --recursive && jshint lib"
   },
-  "version": "1.0.8"
+  "version": "1.0.9"
 }
